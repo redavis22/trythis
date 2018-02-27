@@ -17,7 +17,7 @@ response = rekog.recognize_celebrities(
 
 def handler(event, context):
     data = {
-        'output': "trying this again",
+        'output': "Hello World",
         'timestamp': datetime.datetime.utcnow().isoformat()
     }
     return {'statusCode': 200,
