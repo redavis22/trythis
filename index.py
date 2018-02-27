@@ -2,18 +2,6 @@ import json
 import datetime
 import boto3
 
-rekog = boto3.client('rekognition')
-
-response = rekog.recognize_celebrities(
-    Image={
-        
-        'S3Object': {
-          
-            'Name': 'kognition',
-            'Version': 'bp.jpg'
-        }
-    }
-)
 
 def handler(event, context):
     data = {
